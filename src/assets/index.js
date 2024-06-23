@@ -6,7 +6,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -22,8 +21,13 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import selfstack from "./company/selfstack.jfif";
 import atheneuam from "./atheneuam.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import calendar from "./calendar.png";
+import kanban from "./kanban.png";
+import seminar from "./seatbooking.png";
+import iedc from './company/iedc.png';
+import connect from './company/connect.jfif';
+import budget from "./budget.png";
+import qr from "./qr.png";
 
 export {
   logo,
@@ -49,6 +53,11 @@ export {
   threejs,
   selfstack,
   atheneuam,
-  jobit,
-  tripguide,
+  calendar,
+  kanban,
+  seminar,
+  iedc,
+  connect,
+  budget,
+  qr
 };

@@ -6,6 +6,7 @@ import {
   typescript,
   html,
   css,
+  creator,
   reactjs,
   redux,
   tailwind,
@@ -14,10 +15,15 @@ import {
   git,
   figma,
   selfstack,  
-  carrent,
-  jobit,
-  tripguide,
+  atheneuam,
+  calendar,
+  kanban,
+  seminar,
   threejs,
+  iedc,
+  connect,
+  budget,
+  qr,
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +57,10 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Fullstack Developer",
+    icon: creator,
   },
 ];
 
@@ -108,7 +118,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Mern Stack Developer",
+    title: "Mern Stack Developer Intern",
     company_name: "Self Stack", 
     icon: selfstack,
     iconBg: "#383E56",
@@ -118,6 +128,32 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Developing Restful APIs using Node.js and other related technologies.",
       "Implementing new features and bug fixes.",
+    ],
+  },
+  {
+    title: "COO Intern",
+    company_name: "IEDC EMEA", 
+    icon: iedc,
+    iconBg: "#383E56",
+    date: "January 2023 - April 2023",
+    points: [
+      "Managed a team of interns, contributing to successful outcomes.",
+      "Managed program timelines and ensured successful completion of programs.",
+      "Coordinated and managed various connections to ensure seamless program implementation, contributing to successful outcomes.",
+      "Submit reports to the CEO, offering valuable insights and recommendations for ongoing improvements",
+    ],
+  },
+  {
+    title: "Community Manager Intern",
+    company_name: "Connect EMEA", 
+    icon: connect,
+    iconBg: "#383E56",
+    date: "January 2022 - December 2022",
+    points: [
+      "Timely addressed student comments and inquiries, significantly contributing to increased student satisfaction.",
+      "Formulated and implemented a social media strategy that effectively elevated brand awareness among students.",
+      "Played a key role in team initiatives by actively participating in event organization, survey administration, and various tasks as required.",
+      "Identified and pursued opportunities for process improvement, showcasing a dedicated commitment to enhancing the overall student experience.",
     ],
   },
 ];
@@ -133,11 +169,91 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Express.js",
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JQuery",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: atheneuam,
+    source_code_link: "https://github.com/RifnaC/Athenauem-book-store",
+  },
+  {
+    name: "Calendar",
+    description:
+      "Web application that enables users to create, edit, and delete events.",
+    tags: [
+      {
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Moment.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: calendar,
+    source_code_link: "https://github.com/RifnaC/Calendar",
+  },
+  {
+    name: "Seminar Hall", 
+    description:
+      "Web application that enables users to book seats in a seminar hall on the desired date.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: seminar,
+    source_code_link: "https://github.com/RifnaC/Seat-Booking-App",
+  },
+  {
+    name: "Kanban board", 
+    description:
+      "Web application that enables users to create, edit, and delete events which can be dragged and dropped based on their status.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: kanban,
+    source_code_link: "https://github.com/RifnaC/Kanban-App",
+  },
+  {
+    name: "Budget Calculator", 
+    description:
+      "Web application that calculates the monthly budget based on the income and expenses of the user, and provide a detailed analysis.",
+    tags: [
+      {
+        name: "Chart.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
@@ -145,50 +261,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: atheneuam,
-    source_code_link: "https://github.com/",
+    image: budget,
+    source_code_link: "https://github.com/RifnaC/BudgetCalculator",
   },
   {
-    name: "Job IT",
+    name: "QR code generator", 
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to generate a QR code based on the link provided by the user.",
     tags: [
       {
-        name: "react",
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: qr,
+    source_code_link: "https://github.com/RifnaC/QR-code-generator",
   },
 ];
 
