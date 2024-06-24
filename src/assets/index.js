@@ -21,7 +21,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import selfstack from "./company/selfstack.jfif";
 import atheneuam from "./atheneuam.png";
-import calendar from "./calendar.png";
+import calendar from "Calendar.png";
 import kanban from "./kanban.png";
 import seminar from "./seatbooking.png";
 import iedc from './company/iedc.png';
