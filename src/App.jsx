@@ -5,19 +5,22 @@ import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } fr
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-[#EDE8F5] '>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className='relative z-0'>
-          <Contact />
+      <div className='relative z-0 bg-[#05161A] '>
+
+        <Navbar />
+        <>
           <StarsCanvas />
-        </div>
+          <Hero />
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <div className='relative z-0'>
+            <Contact />
+            <StarsCanvas />
+          </div>
+        </>
+
       </div>
     </BrowserRouter>
   );

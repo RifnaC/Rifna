@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-[#EDE8F5]" : "bg-transparent"
+        scrolled ? "bg-[#05161A]" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -42,8 +42,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
+          {/* 0C7075 
+          0F9696
+          #6DA5C0 -NICE FOR TEXT
+          #294D61
+          */}
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-[#3D52A0] text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-[#cee9f7] text-[18px] font-bold cursor-pointer flex '>
             Rifna &nbsp;
             <span className='sm:block hidden'>| Mern Stack Developer</span>
           </p>
@@ -54,8 +59,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-[#3D52A0]" : "text-[#7091E6]"
-              } hover:text-[#3D52A0] text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-[#6DA5C0]" : "text-[#cee9f7]"
+              } hover:text-[#6DA5C0] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -81,7 +86,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-[#3D52A0]" : "text-[#7091E6]"
+                    active === nav.title ? "text-[#6DA5C0]" : "text-[#6DA5C0]"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
