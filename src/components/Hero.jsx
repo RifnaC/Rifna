@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Tilt from "react-tilt";
 import { Bio } from "../constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../assets/Rifna.jpg";
@@ -273,9 +274,9 @@ const Hero = () => {
             </HeroLeftContainer>
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
-                {/* <Tilt options={defaultOptions}> */}
+                <Tilt options={defaultOptions}>
                   <Img src={HeroImg} alt="Rifna C" />
-                {/* </Tilt> */}
+                </Tilt>
               </motion.div>
             </HeroRightContainer>
           </HeroInnerContainer>

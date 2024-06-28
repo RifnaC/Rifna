@@ -42,11 +42,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* 0C7075 
-          0F9696
-          #6DA5C0 -NICE FOR TEXT
-          #294D61
-          */}
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-[#cee9f7] text-[18px] font-bold cursor-pointer flex '>
             Rifna &nbsp;
@@ -59,8 +54,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-[#6DA5C0]" : "text-[#cee9f7]"
-              } hover:text-[#6DA5C0] text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-[#0C7075]" : "text-[#cee9f7]"
+              } hover:text-[#0C7075] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -86,7 +81,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-[#6DA5C0]" : "text-[#6DA5C0]"
+                    active === nav.title ? "text-[#0C7075]" : "text-[#0C7075]"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
