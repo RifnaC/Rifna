@@ -24,6 +24,9 @@ import {
   connect,
   budget,
   qr,
+  bootstrap,
+  aws,
+  express
 } from "../assets";
 
 export const navLinks = [
@@ -108,8 +111,16 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "Bootstrap CSS",
+    icon: bootstrap,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Express JS",
+    icon: express,
   },
   {
     name: "MongoDB",
@@ -123,10 +134,14 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "AWS",
+  //   icon: aws,
+  // }
   
 ];
 

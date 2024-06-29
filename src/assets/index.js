@@ -28,6 +28,9 @@ import iedc from './company/iedc.png';
 import connect from './company/connect.jfif';
 import budget from "./budget.png";
 import qr from "./qr.png";
+import bootstrap from './tech/bootstrap.jpg'
+import aws from './tech/aws.png'
+import express from './tech/express.png'
 
 export {
   logo,
@@ -59,5 +62,8 @@ export {
   iedc,
   connect,
   budget,
-  qr
+  qr,
+  bootstrap,
+  aws,
+  express
 };
